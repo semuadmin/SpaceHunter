@@ -9,6 +9,14 @@
 
 # WORK IN PROGRESS
 
+![Status](https://img.shields.io/pypi/status/spacehunter)
+![GitHub Release](https://img.shields.io/github/v/release/semuadmin/spacehunter?include_prereleases)
+![Build](https://img.shields.io/github/actions/workflow/status/semuadmin/spacehunter/main.yml?branch=main)
+![Release Date](https://img.shields.io/github/release-date-pre/semuadmin/spacehunter)
+![Last Commit](https://img.shields.io/github/last-commit/semuadmin/spacehunter)
+![Contributors](https://img.shields.io/github/contributors/semuadmin/spacehunter.svg)
+![Open Issues](https://img.shields.io/github/issues-raw/semuadmin/spacehunter)
+
 Just a bit of fun with pygame. An attempt to create an simple arcade-style 2D space shooter with **real-world physics**, responsive enemy interactions and cool weapons.
 
 It's still a work in progress, but is quite fun to play (with a suitable joystick) and is offered here for anyone who feels like taking it on for further development for just for yuks.
@@ -19,7 +27,7 @@ Developed using VSCode with the Python extension.
 
 ![Python version](https://img.shields.io/pypi/pyversions/spacehunter.svg?style=flat)
 [![PyPI version](https://img.shields.io/pypi/v/spacehunter.svg?style=flat)](https://pypi.org/project/spacehunter/)
-![PyPI downloads](https://img.shields.io/pypi/dm/spacehunter.svg?style=flat)
+![PyPI downloads](https://img.shields.io/pypi/dm/spacehunter.svg?style=flat?include-pre-release)
 
 `spacehunter` is compatible with Python 3.9 - 3.13. In the following, `python3` & `pip` refer to the Python 3 executables. You may need to substitute `python` for `python3`, depending on your particular environment (*on Windows it's generally `python`*).
 

@@ -3,7 +3,7 @@
  Python arcade-style space shooter game written entirely in pygame.
 
 
-![app screenshot](https://github.com/semuadmin/spacehunter/blob/master/images/screenshot.png?raw=true)
+![app screenshot](https://github.com/semuadmin/spacehunter/blob/main/images/screenshot.png?raw=true)
 
 ## Current Status
 

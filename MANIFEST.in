@@ -1,0 +1,9 @@
+include 'README.md'
+include 'LICENSE'
+include 'gamestate.json'
+include 'spacehunterconfig.json'
+include src/spacehunter/fonts/*.*
+include src/spacehunter/images/*/*.*
+include src/spacehunter/sounds/*.*
+global-exclude __pycache__
+global-exclude *.pyc

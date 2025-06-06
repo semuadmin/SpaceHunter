@@ -1,0 +1,9 @@
+.DS_Store
+.dropbox
+build/
+dist/
+references/
+src/SpaceHunter.egg-info/
+SpaceHunter-*/
+src/spacehunter/__pycache__/
+*.pyc

@@ -1,0 +1,39 @@
+{
+    "myuser": {
+        "saved": "Jun 25 2023 17:57:54 UTC",
+        "gamestate": 2,
+        "highscore": 13869,
+        "score": 7812,
+        "lives": 0,
+        "level": 0,
+        "shield": 100,
+        "selected_wpn": 1,
+        "weapons_group": [
+            {
+                "wpn_class": "Empty",
+                "ammo": 0,
+                "temp": 0
+            },
+            {
+                "wpn_class": "Laser",
+                "ammo": 0,
+                "temp": 0
+            },
+            {
+                "wpn_class": "Empty",
+                "ammo": 0,
+                "temp": 0
+            },
+            {
+                "wpn_class": "Empty",
+                "ammo": 0,
+                "temp": 0
+            },
+            {
+                "wpn_class": "Empty",
+                "ammo": 0,
+                "temp": 0
+            }
+        ]
+    }
+}

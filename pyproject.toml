@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=75.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SpaceHunter"
+dynamic = ["version"]
+authors = [{ name = "semuadmin", email = "semuadmin@semuconsulting.com" }]
+maintainers = [{ name = "semuadmin", email = "semuadmin@semuconsulting.com" }]
+description = "SpaceHunter 2D arcade game for pygame"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Games/Entertainment :: Arcade",
+]
+
+dependencies = ["pygame>=2.5"]
+
+[project.urls]
+homepage = "https://github.com/semuadmin/spacehunter"
+documentation = "https://www.semuconsulting.com/spacehunter/"
+repository = "https://github.com/semuadmin/spacehunter"
+changelog = "https://github.com/semuadmin/spacehunter/blob/master/RELEASE_NOTES.md"
+
+[project.scripts]
+spacehunter = "spacehunter.__main__:main"
+
+[project.optional-dependencies]
+deploy = ["build", "pip", "setuptools >= 75.0", "wheel"]
+test = ["black", "isort", "pylint"]
+
+[tool.setuptools.dynamic]
+version = { attr = "spacehunter._version.__version__" }
+
+[tool.black]
+target-version = ['py39']
+
+[tool.isort]
+py_version = 39
+profile = "black"
+
+[tool.bandit]
+exclude_dirs = ["docs", "examples", "references", "tests"]
+skips = ["B311"]
+
+[tool.pylint]
+# NB: pygame needs special pylint handling
+jobs = 0
+reports = "y"
+recursive = "y"
+py-version = "3.9"
+fail-under = "9"
+fail-on = "E,F"
+clear-cache-post-run = "y"
+good-names = "i,j,x,y"
+exit-zero = 1
+disable = """
+    no-member,
+    raw-checker-failed,
+    bad-inline-option,
+    locally-disabled,
+    file-ignored,
+    suppressed-message,
+    useless-suppression,
+    deprecated-pragma,
+    use-symbolic-message-instead,
+    attribute-defined-outside-init,
+"""

@@ -41,7 +41,7 @@ spacehunter = "spacehunter.__main__:main"
 
 [project.optional-dependencies]
 deploy = ["build", "pip", "setuptools >= 75.0", "wheel"]
-test = ["black", "isort", "pylint"]
+test = ["black", "isort", "pylint", "bandit"]
 
 [tool.setuptools.dynamic]
 version = { attr = "spacehunter._version.__version__" }

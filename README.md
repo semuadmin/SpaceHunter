@@ -34,13 +34,17 @@ Developed using VSCode with the Python extension.
 - Recommended multi-platform joystick controller - [8BitDo SN30 Pro+](https://www.8bitdo.com/sn30-pro-g-classic-or-sn30-pro-sn/). The joystick controller assignments can be configured via `spacehunterconfig.json`.
 - Game state is saved in `gamestate.json`.
 
-To install:
+To install (requires `build`, `setuptools` and `wheel` packages):
+
+*If you don't have git, simply [download the zip file](https://github.com/semuadmin/SpaceHunter/archive/refs/heads/main.zip) and extract to a folder named SpaceHunter*.
+
 
 ```shell
+python3 -m pip install build wheel setuptools
 git clone https://github.com/semuadmin/SpaceHunter.git
 cd SpaceHunter
 python3 -m build . --wheel
-cd /dist
+cd dist
 python3 -m pip install spacehunter-0.2.0-py3-none-any.whl
 ```
 

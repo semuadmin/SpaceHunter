@@ -25,10 +25,6 @@ Developed using VSCode with the Python extension.
 
 ## <a name="installation">Installation</a>
 
-![Python version](https://img.shields.io/pypi/pyversions/spacehunter.svg?style=flat)
-[![PyPI version](https://img.shields.io/pypi/v/spacehunter.svg?style=flat)](https://pypi.org/project/spacehunter/)
-![PyPI downloads](https://img.shields.io/pypi/dm/spacehunter.svg?style=flat?include-pre-release)
-
 `spacehunter` is compatible with Python 3.9 - 3.13. In the following, `python3` & `pip` refer to the Python 3 executables. You may need to substitute `python` for `python3`, depending on your particular environment (*on Windows it's generally `python`*).
 
 **All platforms**:
@@ -38,21 +34,17 @@ Developed using VSCode with the Python extension.
 - Recommended multi-platform joystick controller - [8BitDo SN30 Pro+](https://www.8bitdo.com/sn30-pro-g-classic-or-sn30-pro-sn/). The joystick controller assignments can be configured via `spacehunterconfig.json`.
 - Game state is saved in `gamestate.json`.
 
-The recommended way to install the latest version of `spacehunter` is with [pip](http://pypi.python.org/pypi/pip/):
+To install:
 
 ```shell
-python3 -m pip install --upgrade spacehunter
+git clone https://github.com/semuadmin/SpaceHunter.git
+cd SpaceHunter
+python3 -m build . --wheel
+cd /dist
+python3 -m pip install spacehunter-0.2.0-py3-none-any.whl
 ```
 
-If required, `spacehunter` can also be installed into a virtual environment, e.g.:
-
-```shell
-python3 -m venv env
-source env/bin/activate # (or env\Scripts\activate on Windows)
-python3 -m pip install --upgrade spacehunter
-```
-
-To run, type `spacehunter` at the command line:
+To run, type:
 
 ```shell
 spacehunter
